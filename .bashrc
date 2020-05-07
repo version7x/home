@@ -8,3 +8,5 @@ PATH=$PATH:$HOME/bin:$HOME/.hosts
 export PATH
 
 set -o vi
+
+alias ssh='ssh -q'
