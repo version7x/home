@@ -5,6 +5,7 @@ chsh -s /bin/bash 2>/dev/null
 xcode-select --install
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+brew update
 
 brew install git 
 git clone https://github.com/version7x/home.git 
