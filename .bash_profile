@@ -1,7 +1,6 @@
 # Bash Profile - very basic
 
-if  [ -f ~/.bashrc ]; then
-  . ~/.bashrc
+export BASH_SILENCE_DEPRECATION_WARNING=1
 
 export PATH=$PATH:$HOME/bin:$HOME/.hosts
 
@@ -14,10 +13,9 @@ alias ssh='ssh -q'
 
 # PYTHON Settings
 #export PATH=$PATH:/c/Users/versi/AppData/Local/Programs/Python/Python36/Scripts/
-export PATH=/usr/local/bin/python36:$PATH
+#export PATH=/usr/local/bin/python36:$PATH
 alias python='/usr/local/bin/python3'
 alias pip='/usr/local/bin/pip3'
-#PYTHON
 
 
 # DOCKER Settings
@@ -33,4 +31,4 @@ alias dcew='docker-compose exec web'
 #export PATH=$PATH:/c/Users/versi/AppData/Roaming/Terraform
 #export AWS_ACCESS_KEY_ID=##################
 #export AWS_SECRET_ACCESS_KEY=##################################
-alias tf=/usr/local/bin/terraform
+alias tf='/usr/local/bin/terraform'
