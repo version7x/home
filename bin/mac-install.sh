@@ -5,12 +5,17 @@
 
 chsh -s /bin/bash 2>/dev/null
 
+# X Code needed for Homebrew
 xcode-select --install
 
+# Install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 brew update
 
+# Install Git
 brew install git 
+
+# Download "." files and scripts
 git clone https://github.com/version7x/home.git 
 cp -Rp home/bin $HOME/bin
 ln -s home/.bash_profile $HOME/.bash_profile
@@ -30,11 +35,14 @@ brew install brave-browser
 brew install terraform
 brew install docker
 
-# Install Mac App Store
+# Install Mac App Store CLI
 # https://github.com/mas-cli/mas
 brew install mas
+# Sign in to mac store - currently broken unless gui version
 #mas signin --dialog version7x@mac.com
-mas signin --dialog version7x@mac.com
+mas signin --dialog version7x@mac.com'
+
+# Install magnet application from MAS
 mas install 441258766
 
 # Visual Studio Code
