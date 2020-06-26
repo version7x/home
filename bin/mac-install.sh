@@ -1,7 +1,7 @@
 #!/bin/bash                                                                                                                        
 
 ## to download/install/run this script in one line:
-/bin/bash -c "$(curl -fsSl https://github.com/version7x/home/edit/master/bin/homebrew-install.sh)"
+/bin/bash -c "$(curl -fsSl https://github.com/version7x/home/edit/master/bin/mac-install.sh)"
 
 chsh -s /bin/bash 2>/dev/null
 
