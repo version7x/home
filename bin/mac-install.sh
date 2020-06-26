@@ -33,7 +33,7 @@ brew cask install google-backup-and-sync
 brew install brave-browser
 
 brew install terraform
-brew install docker
+brew cask install docker
 
 # Install Mac App Store CLI
 # https://github.com/mas-cli/mas
@@ -51,4 +51,5 @@ for EXT in 4ops.terraform ms-azuretools.vscode-docker ms-python.python; do
   code --install-extension $EXT
 done
 
+# MS Office
 brew cask install microsoft-office
