@@ -50,3 +50,5 @@ brew cask install visual-studio-code
 for EXT in 4ops.terraform ms-azuretools.vscode-docker ms-python.python; do
   code --install-extension $EXT
 done
+
+brew cask install microsoft-office
