@@ -12,12 +12,10 @@ brew update
 
 brew install git 
 git clone https://github.com/version7x/home.git 
-cp -Rp home/* .
-cp -Rp home/.bash_profile $HOME/
-cp -Rp home/.vimrc $HOME/
-# Clean Up
-rm -rf home
-rm -rf windows-terminal.json
+cp -Rp home/bin $HOME/bin
+ln -s home/.bash_profile $HOME/.bash_profile
+ln -s home/.vimrc $HOME/.vimrc
+
 
 . ~/.bash_profile
 
@@ -32,3 +30,10 @@ brew install brave-browser
 
 brew install terraform
 brew install docker
+
+# Install Mac App Store
+# https://github.com/mas-cli/mas
+brew install mas
+#mas signin --dialog version7x@mac.com
+mas signin --dialog version7x@mac.com
+mas install 441258766
