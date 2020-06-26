@@ -22,5 +22,8 @@ rm -rf windows-terminal.json
 brew install python3
 pip3 install --upgrade pip --user
 
+brew cask install visual-studio-code
+brew install brave-browser
+
 brew install terraform
 brew install docker
