@@ -8,4 +8,4 @@ Currently works for MAC OS only.
 
 To download/install/run this script in one line for MAC OS only:
 
-/bin/bash -c "$(curl -fsSl https://github.com/version7x/home/edit/master/bin/mac-install.sh)"
+/bin/bash -c "$(curl -fsSl https://raw.githubusercontent.com/version7x/home/master/bin/mac-install.sh)"
