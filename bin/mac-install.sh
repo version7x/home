@@ -24,7 +24,6 @@ brew install python3
 pip3 install --upgrade pip --user
 pip3 install pipenv --user
 
-brew cask install visual-studio-code
 brew cask install google-backup-and-sync
 brew install brave-browser
 
@@ -37,3 +36,9 @@ brew install mas
 #mas signin --dialog version7x@mac.com
 mas signin --dialog version7x@mac.com
 mas install 441258766
+
+# Visual Studio Code
+brew cask install visual-studio-code
+for EXT in 4ops.terraform ms-azuretools.vscode-docker ms-python.python; do
+  code --install-extension $EXT
+done
