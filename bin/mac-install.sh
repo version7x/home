@@ -44,6 +44,8 @@ mas signin --dialog version7x@mac.com'
 
 # Install magnet application from MAS
 mas install 441258766
+# Install remote desktop app
+mas install 1295203466
 
 # Visual Studio Code
 brew cask install visual-studio-code
