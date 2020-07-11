@@ -29,7 +29,8 @@ ln -s home/.vimrc $HOME/.vimrc
 # Python
 brew install python3
 pip3 install --upgrade pip --user
-pip3 install pipenv --user
+pip3 install pipenv 
+pip3 install pylint
 
 # Desktop Apps
 
@@ -43,7 +44,7 @@ brew install terraform
 brew cask install docker
 # Visual Studio Code
 brew cask install visual-studio-code
-for EXT in 4ops.terraform ms-azuretools.vscode-docker ms-python.python; do
+for EXT in 4ops.terraform ms-azuretools.vscode-docker ms-python.python shan.code-settings-sync visualstudioexptteam.vscodeintellicode gjhuerte.black-looks-good-theme; do
   code --install-extension $EXT
 done
 
